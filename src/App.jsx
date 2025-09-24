@@ -69,7 +69,7 @@ console.log(ImgCount)
      {isOpened ? <div className='absolute o-anim top-0 w-full h-full bg-black/70 backdrop-blur-md z-3' >
      <img ref={imgRef} className='w-[80%] h-auto mx-auto mt-[30%] border-5 shadow-2xl shadow-yellow-400 border-yellow-400 max-h-[80%]' src={img} ></img>
       <h1 className={`mt-[4.5%] text-center ${ImgCount === 1 ? '':'opacity-0'} text-4xl font-inter-bold  text-yellow-400`} >УЛОВ!!</h1>
-     <div className='flex flex-row bs-anim relative bottom-[-100%] w-[80%] h-[8vh] justify-between mx-auto mt-[20%]' >
+     <div className='flex flex-row bs-anim relative bottom-[-100%] w-[80%] h-[8vh] justify-between mx-auto ' >
       <button  onClick={ImgCount <= 1 ? '':()=> setImgCount(ImgCount-1)} className='font-inter text-white transition-all active:scale-95 underline' >Предидущая фотка</button>
       <button  onClick={ImgCount > 4  ? '':()=> setImgCount(ImgCount+1)} className='font-inter-bold text-black transition-all shadow-2xl shadow-yellow-300/25 hover:scale-105 active:scale-95 p-[2vmin] rounded bg-yellow-400' >Следущая фотка</button></div></div>:''}
     </>
