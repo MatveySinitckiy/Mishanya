@@ -1,0 +1,192 @@
+@import "tailwindcss";
+@font-face {
+  font-family:inter;
+  src: url(../public/Oswald-VariableFont_wght.ttf);
+}
+.font-inter{
+  font-family:inter;
+  font-weight:400;
+}
+.font-inter-light{
+  font-family:inter;
+  font-weight:250;
+}
+.font-inter-bold{
+  font-family:inter;
+  font-weight:550;
+}
+.k-anim-1{
+  animation-name: k-anim;
+  animation-duration: 0.25s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+@keyframes k-anim {
+  0%{
+    top:-100%;
+  }
+  100%{
+    top: 100%;
+  }
+}
+.bs-anim{
+  animation-name: bs-anim;
+  animation-duration: 0.6s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes bs-anim {
+  0%{
+    bottom: -100%;
+  }
+  100%{
+    bottom: 0;
+  }
+}
+.rotate{
+  animation-name: rotate;
+  animation-duration: 0.5s;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+    filter: blur(1vmax);
+  }
+
+  100%{
+    transform: rotate(360deg);
+       filter: blur(0vmax);
+  }
+}
+body{
+  animation-name: body;
+  animation-duration: 2s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../public/burjkhalfia.jpg);
+  @apply h-[100vh] overflow-hidden
+}
+
+.b-anim{
+  animation-name: b-anim;
+  animation-duration: 1.33s;
+  animation-iteration-count: infinite;
+}
+@keyframes b-anim {
+  0%{
+    left: 0;
+  }
+  100%{
+    left:100%
+  }
+}
+.b-anim-1{
+   animation-name: b-anim-1;
+  animation-duration: 1.33s;
+  animation-iteration-count: infinite; 
+}
+@keyframes b-anim-1 {
+  0%{
+    transform: scale(1);
+  }
+  25%{
+    transform: scale(0.95);
+  }
+  50%{
+    transform: scale(1.15);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.a-anim-1{
+  opacity: 1;
+  animation-name: a-anim-1;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+@keyframes a-anim-1{
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 2.5%;
+  }
+}
+.a-anim-2{
+  opacity: 1;
+  animation-name: a-anim-2;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+@keyframes a-anim-2{
+  0%{
+    left: 2.5%;
+  }
+  100%{
+    left: -100%;
+  }
+}
+.k-anim-1-3{
+  animation-name: k-anim-1-3;
+  animation-duration: 1.95s;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes k-anim-1-3 {
+  0%{
+    top:-100%;
+    opacity: 1;
+  }
+  100%{
+    top: 10%;
+    opacity: 1;
+  } 
+}
+.k-anim-1-2{
+  animation-name: k-anim-1-2;
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes k-anim-1-2 {
+  0%{
+    top:-100%;
+    opacity: 1;
+  }
+  100%{
+    top: 10%;
+    opacity: 1;
+  } 
+}
+.k-anim-1-1{
+  animation-name: k-anim-1-1;
+  animation-duration: .75s;
+  animation-fill-mode: forwards; 
+}
+@keyframes k-anim-1-1 {
+  0%{
+    top:-100%;
+    opacity: 1;
+  }
+  100%{
+    top: 10%;
+    opacity: 1;
+
+  } 
+}
+.o-anim{
+  animation-name: o-anim;
+  animation-duration: 0.8s;
+}
+@keyframes o-anim {
+  0%{
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
