@@ -34,6 +34,18 @@ function App() {
    if(ImgCount === 4){
         setImg('./mishasosal.jpg')
    }
+   if(ImgCount === 5){
+    setImg('./igor.jpg')
+   }
+   if(ImgCount === 6){
+    setImg('./me.jpg')
+   }
+   if(ImgCount === 7){
+    setImg('./mishaa.jpg')
+   }
+   if(ImgCount === 8){
+    setImg('./kshiba.jpg')
+   }
 
   }, [ImgCount]);
 const FunSpin = () => {
@@ -70,8 +82,8 @@ console.log(ImgCount)
      <img ref={imgRef} className='w-[80%] h-auto mx-auto mt-[30%] border-5 shadow-2xl shadow-yellow-400 border-yellow-400 max-h-[80%]' src={img} ></img>
       <h1 className={`mt-[4.5%] text-center ${ImgCount === 1 ? '':'opacity-0'} text-4xl font-inter-bold  text-yellow-400`} >УЛОВ!!</h1>
      <div className='flex flex-row bs-anim relative bottom-[-100%] w-[80%] h-[8vh] justify-between mx-auto ' >
-      <button  onClick={ImgCount <= 1 ? '':()=> setImgCount(ImgCount-1)} className='font-inter text-white transition-all active:scale-95 underline' >Предидущая фотка</button>
-      <button  onClick={ImgCount > 4  ? '':()=> setImgCount(ImgCount+1)} className='font-inter-bold text-black transition-all shadow-2xl shadow-yellow-300/25 hover:scale-105 active:scale-95 p-[2vmin] rounded bg-yellow-400' >Следущая фотка</button></div></div>:''}
+      <button  onClick={ImgCount <= 1 ? '':()=> setImgCount(ImgCount-1)} className='font-inter text-white transition-all active:scale-95 underline' >Предыдущая фотка</button>
+      <button  onClick={ImgCount > 7  ? '':()=> setImgCount(ImgCount+1)} className='font-inter-bold text-black transition-all shadow-2xl shadow-yellow-300/25 hover:scale-105 active:scale-95 p-[2vmin] rounded bg-yellow-400' >Следущая фотка</button></div></div>:''}
     </>
   )
 }
